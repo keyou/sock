@@ -18,7 +18,7 @@ join_mcast(int fd, struct sockaddr_in *sin)
 	struct ip_mreq	mreq;
 
 	inaddr = sin->sin_addr.s_addr;
-	if (IN_MULTICAST(inaddr) == 0)
+	if (IN_MULTICAST(ntohl(inaddr)) == 0)
 		return;			/* not a multicast address */
 
 	mreq.imr_multiaddr.s_addr = inaddr;
