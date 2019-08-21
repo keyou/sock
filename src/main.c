@@ -376,6 +376,7 @@ static void
 usage(const char *msg)
 {
 	err_msg(
+"(6c12b17:fix multicast ip check bug)\n"
 "usage: sock [ options ] <host> <port>              (for client; default)\n"
 "       sock [ options ] -s [ <IPaddr> ] <port>     (for server)\n"
 "       sock [ options ] -i <host> <port>           (for \"source\" client)\n"
